@@ -1,0 +1,21 @@
+.nav-link{
+    color: #4B5563 !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    border-radius: 5px;
+    margin-block: 3px;
+    margin-inline: 10px;
+    text-align: center;
+    padding-inline:10px;
+    padding-block: 5px;
+}
+.nav-link:hover{
+    background-color: rgba(170, 111, 228, 0.251);
+}
+.active{
+    background-color: #9B87F5 !important;
+    color: white !important;
+}
+.navbar-nav{
+    border: 1px solid rgba(148, 146, 146, 0.345)
+}

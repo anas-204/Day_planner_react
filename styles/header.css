@@ -1,0 +1,11 @@
+.header-container{
+    background-color: #9B87F5;
+    color: white;
+    padding: 20px;
+}
+.right-pt-p,.left-pt-p{
+    color: rgba(255, 255, 255, 0.831);
+}
+.left-pt h2{
+    font-weight: 700;
+}

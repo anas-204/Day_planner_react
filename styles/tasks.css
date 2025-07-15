@@ -1,0 +1,10 @@
+.taskContainer{
+    box-shadow: 0px 1px 5px rgb(152, 150, 150);
+}
+.taskContainerBody{
+    margin-block: 20px;
+    text-align: center;
+}
+.taskContainerBody p{
+    color: #8d8a8a;
+}
