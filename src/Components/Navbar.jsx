@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import "D:/SBME/Web/projects/Day planner ( React )/Day_planner/styles/navbar.css";
+import "../../styles/navbar.css";
 
 export default function Navbar() {
   return (

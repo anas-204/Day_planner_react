@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "D:/SBME/Web/projects/Day planner ( React )/Day_planner/styles/header.css";
+import "../../styles/header.css";
 
 export default function Header() {
   const [currentDate] = useState(new Date());

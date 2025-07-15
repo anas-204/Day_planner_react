@@ -1,6 +1,6 @@
 import { useState } from "react";
 import AddTaskBut from "./../src/Components/AddTaskBut";
-import "D:/SBME/Web/projects/Day planner ( React )/Day_planner/styles/tasks.css";
+import "../styles/tasks.css";
 import Task from "../src/Components/Task";
 import FormSchema from "../src/Components/FormSchema";
 

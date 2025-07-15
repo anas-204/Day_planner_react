@@ -1,7 +1,3 @@
-import "D:/SBME/Web/projects/Day planner ( React )/Day_planner/styles/tasks.css";
-import FormSchema from "./FormSchema";
-import Tasks from "../../pages/Tasks";
-
 export default function Task(props) {
   return (
     <div

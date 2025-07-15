@@ -1,4 +1,4 @@
-import "D:/SBME/Web/projects/Day planner ( React )/Day_planner/styles/addtaskbut.css";
+import "../../styles/addtaskbut.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 export default function AddTaskBut({ onClick, visible = true }) {
