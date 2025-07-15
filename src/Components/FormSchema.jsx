@@ -45,6 +45,7 @@ export default function FormSchema({ onAddTask, onCancel }) {
             placeholder="Task title"
             defaultValue=""
             name="validationCustom01"
+            className="mb-1"
           />
           <Form.Control.Feedback className="text-center">
             Looks good!
@@ -80,6 +81,7 @@ export default function FormSchema({ onAddTask, onCancel }) {
             type="time"
             placeholder="Start time"
             name="validationCustomUsername"
+            className="mb-1"
             required
           />
           <Form.Control.Feedback type="invalid" className="text-center">
@@ -102,7 +104,12 @@ export default function FormSchema({ onAddTask, onCancel }) {
       <Row className="mb-3 text-start">
         <Form.Group as={Col} md="6" controlId="validationCustom04">
           <Form.Label>Priority</Form.Label>
-          <Form.Control as="select" name="validationCustom04" required>
+          <Form.Control
+            as="select"
+            name="validationCustom04"
+            className="mb-1"
+            required
+          >
             <option value="Low">Low</option>
             <option value="medium">medium</option>
             <option value="High">High</option>
@@ -130,10 +137,10 @@ export default function FormSchema({ onAddTask, onCancel }) {
         </Form.Group>
       </Row>
 
-      <Button type="submit" className="mx-2 border-0">
+      <Button type="submit" className="mx-2 border-0 my-2">
         Add Task
       </Button>
-      <Button onClick={onCancel} className="mx-3 border-0">
+      <Button onClick={onCancel} className="mx-3 border-0 my-2">
         Cancel
       </Button>
     </Form>
