@@ -1,0 +1,9 @@
+.hour{
+    width:60px;
+    height: 50px;
+    border: 0;
+    border-right: 1px solid #908d8d9f;
+    padding-top: 10px;
+    padding-right:2px;
+    margin-block: 15px;
+}

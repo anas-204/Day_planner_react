@@ -1,0 +1,8 @@
+.header p:first-child {
+    font-size: 22px;
+    color: #2c2b2b;
+}
+.header p:last-child {
+    font-size: 15px;
+    color: #707070ae;
+}

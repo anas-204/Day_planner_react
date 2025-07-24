@@ -1,34 +1,34 @@
-import { useState } from "react";
 import AddTaskBut from "./../src/Components/AddTaskBut";
 import "../styles/tasks.css";
 import Task from "../src/Components/Task";
 import FormSchema from "../src/Components/FormSchema";
+import { ToastContainer } from "react-toastify";
 
-export default function Tasks() {
-  const [tasksArray, setTasksArray] = useState([]);
-  const [showForm, setShowForm] = useState(false);
-
-  const handleAddTask = (newTask) => {
-    setTasksArray([...tasksArray, newTask]);
-    setShowForm(false);
-  };
-  const onDeleteTask = (taskIndex) => {
-    setTasksArray(tasksArray.filter((_, index) => index !== taskIndex));
-  };
-  const onComplete = (taskIndex) => {
-    setTasksArray(
-      tasksArray.map((task, index) =>
-        index === taskIndex ? { ...task, completed: true } : task
-      )
-    );
-  };
+export default function Tasks({
+  tasksArray,
+  handleAddTask,
+  onComplete,
+  onDeleteTask,
+  setShowForm,
+  showForm,
+}) {
   return (
     <div className="taskContainer bg-light col-lg-8 col-11 rounded-2 p-4 mx-auto">
+      <ToastContainer
+        position="bottom-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+      />
       <div className="taskContainerHeader d-flex justify-content-between">
         <h3>
           <strong> Tasks </strong>
         </h3>
-        <AddTaskBut onClick={() => setShowForm(true)} visible={!showForm} />
+        <AddTaskBut onClick={() => setShowForm(true)} visible={!showForm} />{" "}
       </div>
       <div className="taskContainerBody px-3">
         {showForm && (

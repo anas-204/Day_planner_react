@@ -1,4 +1,4 @@
-export default function Task(props) {
+export default function Task({ ...props }) {
   return (
     <div
       className="task d-flex flex-row px-4 justify-content-between align-items-center border-1 border rounded-3 pt-3 my-4 "
@@ -19,14 +19,14 @@ export default function Task(props) {
     >
       <div className="taskDetails d-flex flex-column col-10 col-md-11  text-start">
         <h5 className="text-dark">{props.title}</h5>
-        <p>{props.description}</p>
+        <p>{props.description ? props.description : " "}</p>
         <div className="timeAndPriority d-flex gap-3 flex-wrap">
           <p
             style={{
               fontSize: "13px",
             }}
           >
-            {props.dueDate ? `Due : ${props.dueDate}` : "null"}
+            {props.dueDate ? `Due : ${props.dueDate}` : " "}
           </p>
           <p
             style={{
@@ -34,7 +34,7 @@ export default function Task(props) {
             }}
           >
             {props.startTime || props.endTime
-              ? `Time: ${props.startTime} - ${props.endTime}`
+              ? `Time : ${props.startTime} - ${props.endTime}`
               : ""}
           </p>
           <p
