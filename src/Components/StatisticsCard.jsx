@@ -1,4 +1,4 @@
-import "../../styles/StatisticsCard.css";
+import "../../styles/statisticsCard.css";
 
 export default function StatisticsCard(props) {
   return (
