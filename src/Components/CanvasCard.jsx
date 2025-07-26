@@ -1,4 +1,4 @@
-import "../../styles/CanvasCard.css";
+import "../../styles/canvasCard.css";
 export default function CanvasCard(props) {
   return (
     <>
