@@ -1,4 +1,5 @@
 import "../../styles/canvasCard.css";
+
 export default function CanvasCard(props) {
   return (
     <>
