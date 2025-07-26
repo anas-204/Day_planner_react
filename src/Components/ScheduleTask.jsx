@@ -1,7 +1,7 @@
 import ScheduleHour from "./ScheduleHour";
 import Task from "./Task";
 
-export default function ScheduleTask({ hour, title, tasksArray }) {
+export default function ScheduleTask({ hour, tasksArray }) {
   const tasksForThisHour = tasksArray.filter((task) => {
     if (!task.startTime) return false;
     const taskHour = parseInt(task.startTime.split(":")[0], 10);
@@ -15,18 +15,6 @@ export default function ScheduleTask({ hour, title, tasksArray }) {
         <div className="tasks-container d-flex flex-row">
           {tasksForThisHour.length > 0 ? (
             tasksForThisHour.map((task, index) => (
-              // <Task
-              //   style={style}
-              //   key={`${hour}-${index}`}
-              //   index={tasksArray.findIndex((t) => t === task)}
-              //   title={task.title || "Untitled Task"}
-              //   startTime={task.startTime}
-              //   endTime={task.endTime}
-              //   onDeleteTask={onDeleteTask}
-              //   onComplete={onComplete}
-              //   completed={task.completed}
-              //   priority ={task.priority}
-              // />
               <div
                 style={{
                   width: "fit-content",

@@ -1,0 +1,10 @@
+.canvasContainer{
+    border: 1px solid #bababa8a;
+    border-radius:5px;
+    width: 480px;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+}
+.canvasContainer p:nth-child(1){
+    font-weight: 500;
+}
