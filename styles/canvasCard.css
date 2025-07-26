@@ -8,5 +8,13 @@
 .canvasContainer p:nth-child(1){
     font-weight: 500;
 }
+@media screen and (max-width: 400px) {
+    .canvasContainer{
+        width: 100%;
+    }
+    CanvasCard div{
+        width: 400px;
+    }
+}
 
 
