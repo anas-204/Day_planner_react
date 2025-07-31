@@ -8,6 +8,7 @@ import {
 import { app } from "../src/firebase-config";
 import "../styles/loginandregisterBG.css";
 import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 export default function Register() {
   const [input, setInput] = useState({
@@ -15,6 +16,7 @@ export default function Register() {
     email: "",
     password: "",
   });
+  const navigate = useNavigate();
 
   const handleInput = (e) => {
     setInput({
@@ -33,43 +35,46 @@ export default function Register() {
       );
       await sendEmailVerification(userCredential.user);
       await Swal.fire({
-        title: "Your account is created successfully",
+        title: "Account Created!",
+        text: "Redirecting to login...",
         icon: "success",
-        confirmButtonText: "OK",
-        draggable: true,
+        timer: 2000,
+        showConfirmButton: false,
+        timerProgressBar: true,
       });
+      navigate("/Login");
     } catch (error) {
       switch (error.code) {
         case "auth/email-already-in-use":
-          Swal.fire({
-            title: "Email already-in-use",
+          await Swal.fire({
+            title: "Email already in use",
+            text: "Please use a different email address",
             icon: "error",
             confirmButtonText: "OK",
-            draggable: true,
           });
           break;
         case "auth/weak-password":
-          Swal.fire({
-            title: "Password is weak",
+          await Swal.fire({
+            title: "Weak Password",
+            text: "Please choose a stronger password (min 6 chars)",
             icon: "error",
             confirmButtonText: "OK",
-            draggable: true,
           });
           break;
         case "auth/invalid-email":
-          Swal.fire({
-            title: "Your account is created successfully",
+          await Swal.fire({
+            title: "Invalid Email",
+            text: "Please enter a valid email address",
             icon: "error",
             confirmButtonText: "OK",
-            draggable: true,
           });
           break;
         default:
-          Swal.fire({
-            title: "Your account is created successfully",
-            icon: "question",
+          await Swal.fire({
+            title: "Registration Failed",
+            text: error.message,
+            icon: "error",
             confirmButtonText: "OK",
-            draggable: true,
           });
       }
     }
