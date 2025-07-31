@@ -1,5 +1,5 @@
 import Button from "react-bootstrap/Button";
-import "../styles/loginAndRegisterBG.css";
+import "../styles/loginandregisterBG.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { signInWithEmailAndPassword, getAuth } from "firebase/auth";
