@@ -1,0 +1,45 @@
+.loginAndRegisterContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(120deg, #40CBF9, #9D95F6, #BF83F5);
+}
+.email,.password{
+    font-weight: 500;
+}
+.passwordField,.emailField{
+    border-radius: 10px !important;
+}
+h4{
+    font-weight: 700 !important;
+}
+p{
+    font-size: 13px;
+    color: #7b7777;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-block: 15px !important;
+    font-weight: 500;
+}
+.formBG{
+    background-color: #F9FAFF;
+    height: fit-content;
+}
+.subBut{
+    background: linear-gradient(to right, #40CBF9, #84A1F7, #BF83F5);
+}
+.signUpBut,.signInBut{
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    display: block;
+    width: fit-content;
+    margin-inline: auto;
+}
+.signUpBut:hover,.signInBut:hover{
+    background-color: hsl(134 61% 92%);
+}

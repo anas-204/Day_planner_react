@@ -7,6 +7,8 @@ import { useState, useEffect, useMemo } from "react";
 import "./App.css";
 import Login from "../pages/Login";
 import { toast } from "react-toastify";
+import Register from "./../pages/Register";
+import { ArcElement } from "chart.js";
 
 function App() {
   const [tasksArray, setTasksArray] = useState(() => {
@@ -84,6 +86,8 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Login />} />
+      <Route path="/Register" element={<Register />} />
+      <Route path="/Login" element={<Login />} />
       <Route
         path="/tasks"
         element={
