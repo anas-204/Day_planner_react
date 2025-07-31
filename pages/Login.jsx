@@ -42,7 +42,7 @@ export default function Login() {
     } catch (error) {
       await Swal.fire({
         title: "Login Failed",
-        text: error.message,
+        text: "something went wrong",
         icon: "error",
         confirmButtonText: "OK",
       });
