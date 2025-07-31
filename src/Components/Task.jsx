@@ -20,7 +20,7 @@ export default function Task({ ...props }) {
       <div className="taskDetails d-flex flex-column col-10 col-md-11  text-start">
         <h5 className="text-dark">{props.title}</h5>
         <p>{props.description ? props.description : " "}</p>
-        <div className="timeAndPriority d-flex gap-3 flex-wrap">
+        <div className="timeAndPriority d-flex gap-1 gap-sm-3 flex-wrap">
           <p
             style={{
               fontSize: "13px",
@@ -38,7 +38,7 @@ export default function Task({ ...props }) {
               : ""}
           </p>
           <p
-            className=" px-1 rounded-1 py-1 "
+            className=" px-1 rounded-1 py-1 mx-2 "
             style={{
               fontSize: "12px",
               backgroundColor:
@@ -62,7 +62,7 @@ export default function Task({ ...props }) {
             {props.priority}
           </p>
           <p
-            className="px-1 rounded-1 py-1 "
+            className="px-1 rounded-1 py-1 mx-2 "
             style={{
               fontSize: "12px",
               backgroundColor:
@@ -82,7 +82,7 @@ export default function Task({ ...props }) {
           </p>
         </div>
       </div>
-      <div className="taskOptions d-flex justify-content-between justify-content-lg-around col-2 col-md-1">
+      <div className="taskOptions d-flex justify-content-between flex-column flex-sm-row justify-content-lg-around col-2 col-md-1">
         <i
           style={{ transition: "0.5s ease all" }}
           className="bi bi-trash-fill fs-5 me-2 "

@@ -42,7 +42,7 @@ export default function Register() {
         showConfirmButton: false,
         timerProgressBar: true,
       });
-      navigate("/Login");
+      navigate("/Tasks");
     } catch (error) {
       switch (error.code) {
         case "auth/email-already-in-use":
@@ -145,7 +145,7 @@ export default function Register() {
           </button>
         </form>
 
-        <p>Already have an account?</p>
+        <p>Already have an account ?</p>
         <Link to="/Login" className="signInBut">
           Sign In
         </Link>
