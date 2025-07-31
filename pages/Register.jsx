@@ -6,7 +6,7 @@ import {
   sendEmailVerification,
 } from "firebase/auth";
 import { app } from "../src/firebase-config";
-import "../styles/loginAndRegisterBG.css";
+import "../styles/loginandregisterBG.css";
 import Swal from "sweetalert2";
 
 export default function Register() {
