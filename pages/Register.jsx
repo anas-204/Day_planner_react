@@ -91,7 +91,7 @@ export default function Register() {
           className="d-flex flex-column align-items-center my-4"
         >
           <div className="mb-3 col-11">
-            <label className="name">
+            <label className="name my-2">
               <i className="bi bi-person mx-1"></i> User Name
             </label>
             <input
@@ -106,8 +106,8 @@ export default function Register() {
           </div>
 
           <div className="mb-3 col-11">
-            <label className="email">
-              <i className="bi bi-envelope-check mx-1"></i> Email Address
+            <label className="email my-1">
+              <i className="bi bi-envelope-check mx-2"></i> Email Address
             </label>
             <input
               className="form-control emailField"
@@ -121,7 +121,7 @@ export default function Register() {
           </div>
 
           <div className="mb-3 col-11">
-            <label className="password">
+            <label className="password my-2">
               <i className="bi bi-lock mx-1"></i> Password
             </label>
             <input
